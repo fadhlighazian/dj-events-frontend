@@ -12,6 +12,7 @@ const nextConfig = {
       {
         // matching all API routes
         source: '/api/:path*',
+        destination: 'https://dj-events-frontend-lake.vercel.app/:path*',
         headers: [
           { key: 'Access-Control-Allow-Credentials', value: 'true' },
           {
