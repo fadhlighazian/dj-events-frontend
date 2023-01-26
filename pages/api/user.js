@@ -16,7 +16,8 @@ export default async (req, res) => {
       headers: {
         Authorization: `Bearer ${token}`,
         'Access-Control-Allow-Credentials': 'true',
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin':
+          'https://dj-events-frontend-lake.vercel.app',
         'Access-Control-Allow-Methods': 'GET,OPTIONS,PATCH,DELETE,POST,PUT',
         'Access-Control-Allow-Headers':
           'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
@@ -28,7 +29,7 @@ export default async (req, res) => {
     if (strapiRes.ok) {
       // cors
       res.setHeader('Access-Control-Allow-Credentials', true);
-      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Access-Control-Allow-Origin', 'https://dj-events-frontend-lake.vercel.app');
       // another common pattern
       // res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
       res.setHeader(
