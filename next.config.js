@@ -17,7 +17,7 @@ const nextConfig = {
           { key: 'Access-Control-Allow-Credentials', value: 'true' },
           {
             key: 'Access-Control-Allow-Origin',
-            value: 'https://dj-events-frontend-lake.vercel.app/',
+            value: 'https://dj-events-frontend-lake.vercel.app',
           },
           {
             key: 'Access-Control-Allow-Methods',
